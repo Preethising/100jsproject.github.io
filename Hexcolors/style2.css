@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 95%;
+}
+
+.container .hex-color .btn {
+    background-color: rgb(12, 133, 238);
+    color: white;
+    padding: 10px;
+}
+
+.hex-color h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changecolor 10s infinite alternate;
+}
+
+.hex-color h2 {
+    font-size: 2rem;
+    margin-top: 10%;
+}
+
+@keyframes changecolor {
+    0% {
+        color: indigo;
+    }
+    15% {
+        color: blue;
+    }
+    30% {
+        color: green;
+    }
+    45% {
+        color: yellow;
+    }
+    60% {
+        color: orange;
+    }
+    75% {
+        color: red;
+    }
+    90% {
+        color: brown;
+    }
+    100% {
+        color: purple;
+    }
+}
+
+@media(max-width:480px) {
+    .hex-color h1 {
+        font-size: 1.5rem;
+    }
+    .hex-color h2 {
+        font-size: 1.5rem;
+    }
+}
